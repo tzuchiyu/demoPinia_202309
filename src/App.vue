@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import { ElMenuItem } from "element-plus";
+import { useProductStore } from "@/stores/counter.ts"; //引入stores
+const productStore = useProductStore(); //使用
 </script>
 
 <template>
@@ -15,7 +17,7 @@ import { ElMenuItem } from "element-plus";
       <router-link to="/">Product</router-link>
     </el-menu-item>
     <el-menu-item>
-      <router-link to="/cart">Cart</router-link>
+      <router-link to="/cart">Cart ({{ productStore.total }})</router-link>
     </el-menu-item>
   </el-menu>
   <div><RouterView /></div>

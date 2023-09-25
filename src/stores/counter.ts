@@ -5,13 +5,18 @@ import { v4 as uuidv4 } from "uuid";
 // 定義useCounterStore
 export const useProductStore = defineStore("ProductStore", {
   state: () => {
+    const cart = localStorage.getItem("cart")
+      ? JSON.parse(localStorage.getItem("cart"))
+      : [];
     return {
-      cart: localStorage.getItem("cart")
-        ? JSON.parse(localStorage.getItem("cart"))
-        : [],
+      cart,
       products: products,
-      index: 0,
     };
+  },
+  getters: {
+    total(): number {
+      return this.cart.length;
+    },
   },
   actions: {
     addIntoCart(i: any) {

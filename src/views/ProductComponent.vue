@@ -12,7 +12,7 @@ const productStore = useProductStore(); //使用
       v-for="(i, index) in productStore.products"
       :id="index"
       :key="index"
-      :span="8"
+      :span="6"
       style="margin: 10px"
     >
       <el-card :body-style="{ padding: '0px' }" shadow="hover">
@@ -49,6 +49,19 @@ const productStore = useProductStore(); //使用
   min-height: auto;
   background-color: black;
   color: white;
+}
+
+.button:active {
+  padding: 5px;
+  min-height: auto;
+  background-color: black;
+  color: white;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 .image {

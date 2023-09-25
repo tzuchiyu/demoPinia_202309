@@ -7,13 +7,13 @@ const productStore = useProductStore(); //使用
   <main>
     <h2 style="text-align: center">Shopping Cart</h2>
     <el-row
-      v-if="productStore.cart != []"
+      v-if="productStore.cart.length > 0"
       style="margin: 20px; display: flex; justify-content: center"
     >
       <el-col
         v-for="(i, index) in productStore.cart"
         :key="index"
-        :span="8"
+        :span="6"
         style="margin: 10px"
       >
         <el-card :body-style="{ padding: '0px' }" shadow="hover">
@@ -30,8 +30,6 @@ const productStore = useProductStore(); //使用
         </el-card>
       </el-col>
     </el-row>
-    <h3 v-else>購物車是空的</h3>
+    <h3 v-else style="text-align: center; margin-top: 50px">購物車是空的!</h3>
   </main>
 </template>
-
-<style scoped></style>
