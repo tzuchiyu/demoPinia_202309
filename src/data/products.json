@@ -1,7 +1,27 @@
 [
-  { "title": "iPhone 15 pro", "price": "36,900" },
-  { "title": "iPhone 15", "price": "29,900" },
-  { "title": "iPhone 14", "price": "25,900" },
-  { "title": "iPhone 13", "price": "21,900" },
-  { "title": "iPhone SE", "price": "14,900" }
+  {
+    "title": "iPhone 15 pro",
+    "price": "36,900",
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1693010533609"
+  },
+  {
+    "title": "iPhone 15",
+    "price": "29,900",
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-model-unselect-gallery-2-202309?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692925254216"
+  },
+  {
+    "title": "iPhone 14",
+    "price": "25,900",
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202303?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1676930656159"
+  },
+  {
+    "title": "iPhone 13",
+    "price": "21,900",
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-finish-unselect-gallery-1-202207?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1654894185506"
+  },
+  {
+    "title": "iPhone SE",
+    "price": "14,900",
+    "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-se-finish-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1655249921393"
+  }
 ]
